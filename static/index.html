@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Brief Generator - Collabstr</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Brief Generator</h1>
+            <p class="subtitle">Create professional campaign briefs in seconds</p>
+        </header>
+
+        <main>
+            <form id="briefForm">
+                <div class="form-group">
+                    <label for="brandName">Brand Name</label>
+                    <input 
+                        type="text" 
+                        id="brandName" 
+                        name="brand_name" 
+                        placeholder="Enter brand name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="platform">Target Platform</label>
+                    <select id="platform" name="platform" required>
+                        <option value="" disabled selected>Select platform</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="TikTok">TikTok</option>
+                        <option value="UGC">UGC</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="goal">Campaign Goal</label>
+                    <select id="goal" name="goal" required>
+                        <option value="" disabled selected>Select goal</option>
+                        <option value="Awareness">Awareness</option>
+                        <option value="Conversions">Conversions</option>
+                        <option value="Content Assets">Content Assets</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tone">Tone</label>
+                    <select id="tone" name="tone" required>
+                        <option value="" disabled selected>Select tone</option>
+                        <option value="Professional">Professional</option>
+                        <option value="Friendly">Friendly</option>
+                        <option value="Playful">Playful</option>
+                    </select>
+                </div>
+
+                <button type="submit" id="submitBtn">Generate Brief</button>
+            </form>
+
+            <div id="loader" class="loader" style="display: none;">
+                <p>Generating your brief...</p>
+            </div>
+
+            <div id="error" class="error" style="display: none;"></div>
+
+            <div id="result" class="result" style="display: none;">
+                <div class="result-section">
+                    <h2>Campaign Brief</h2>
+                    <p id="briefText"></p>
+                </div>
+
+                <div class="result-section">
+                    <h2>Content Angles</h2>
+                    <ol id="anglesList"></ol>
+                </div>
+
+                <div class="result-section">
+                    <h2>Creator Selection Criteria</h2>
+                    <ul id="criteriaList"></ul>
+                </div>
+
+                <div class="metrics">
+                    <span>Generation time: <strong id="latency">-</strong></span>
+                    <span>Tokens used: <strong id="tokens">-</strong></span>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
+
