@@ -2,11 +2,11 @@
 
 A minimal, production-minded AI feature that generates campaign briefs for influencer marketing. Built with Django, OpenAI, and clean frontend using HTML/CSS/jQuery.
 
-## 📹 Demo
+## Demo
 
-**Loom Video**: [Add your Loom link here - under 1 minute demo]
+**Loom Video**: 
 
-## 📋 Quick Reference
+## Quick Reference
 
 This README includes detailed notes on:
 1. **Prompt Design Choices** → See [Implementation Details](#-implementation-details)
@@ -15,7 +15,7 @@ This README includes detailed notes on:
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ```bash
 # Install dependencies
@@ -35,7 +35,7 @@ Visit **http://localhost:8000** in your browser.
 
 > **Note:** The app works without an OpenAI API key using intelligent stub responses for development/testing.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 ai_brief/
@@ -58,7 +58,7 @@ ai_brief/
       └── app.js
 ```
 
-## 🎯 Features
+## Features
 
 ### Inputs
 - **Brand Name** (text input)
@@ -72,7 +72,7 @@ ai_brief/
 - **Creator Criteria**: 3 creator selection criteria
 - **Metrics**: Latency (ms) and token usage
 
-## 🛡️ Implementation Details
+## Implementation Details
 
 ### Prompt Design Choices
 
@@ -128,7 +128,7 @@ ai_brief/
    - Returns 0 for token counts
    - Generates contextual placeholder content
 
-## 🎨 Frontend Design
+## Frontend Design
 
 - **Clean, minimal aesthetic** inspired by Collabstr
 - **Gradient title** with Collabstr brand colors
@@ -139,7 +139,7 @@ ai_brief/
 - **Responsive design** for mobile and desktop
 - **jQuery AJAX** for seamless form submission
 
-## 🔧 Development
+## Development
 
 ### Running Tests
 ```bash
@@ -158,7 +158,7 @@ ai_brief/
 OPENAI_API_KEY=sk-...  # Optional, uses stub if not set
 ```
 
-## 📝 Technical Notes
+## Technical Notes
 
 - **Development Time**: Completed as a focused vertical slice demo
 - **Database**: SQLite (default Django setup, no custom migrations needed)
