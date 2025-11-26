@@ -154,8 +154,24 @@ ai_brief/
 ```
 
 ### Environment Variables
+
+**Development:**
 ```bash
 OPENAI_API_KEY=sk-...  # Optional, uses stub if not set
+```
+
+**Production (Render):**
+```bash
+SECRET_KEY=your-secret-key-here  # Generate a new one for production
+DEBUG=False
+ALLOWED_HOSTS=your-app.onrender.com
+OPENAI_API_KEY=sk-...
+PYTHON_VERSION=3.11
+```
+
+To generate a new SECRET_KEY:
+```python
+python -c "from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())"
 ```
 
 ## Technical Notes
