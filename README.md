@@ -139,20 +139,6 @@ ai_brief/
 - **Responsive design** for mobile and desktop
 - **jQuery AJAX** for seamless form submission
 
-## Development
-
-### Running Tests
-```bash
-# The app includes basic validation and can be tested manually
-# Visit http://localhost:8000 and try various inputs
-```
-
-### Adding Rate Limiting
-```python
-# In settings.py, add django-ratelimit
-# In views.py, add @ratelimit decorator to generate_brief
-```
-
 ### Environment Variables
 
 **Development:**
