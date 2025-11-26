@@ -4,7 +4,7 @@ A minimal, production-minded AI feature that generates campaign briefs for influ
 
 ## Demo
 
-**Loom Video**: 
+**Loom Video**: loom.com/share/e36385b3422f4f2c9eb54adb6b8a77b4?focus_title=1&muted=1&from_recorder=1
 
 ## Quick Reference
 
